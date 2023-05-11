@@ -23,8 +23,4 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-//test code
-assertEqual(eqArrays([1,2,3], [1,2,3]), true);
-assertEqual(eqArrays(['1','2','3',], ['1','2','3','4']), false);
-assertEqual(eqArrays([1,2,'3'], [1,2,3]), false);
-assertEqual(eqArrays(['1','2','3','4'], ['1','2','3','4']), true);
+module.exports = eqArrays;
