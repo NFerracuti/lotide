@@ -36,16 +36,18 @@ const map = function(array, callback) {
   return results;
 };
 
-const results1 = map(words, word => word[0]);
+// const results1 = map(words, word => word[0]);
 
-const results2 = map(words, word => word.length);
+// const results2 = map(words, word => word.length);
 
-const agesArr = [45, 23, 77, 65, 18, 5, 82, 91];
+// const agesArr = [45, 23, 77, 65, 18, 5, 82, 91];
 
-const seniors = map(agesArr, age => (age >= 60 ? age : undefined)).filter(age => age !== undefined);;
+// const seniors = map(agesArr, age => (age >= 60 ? age : undefined)).filter(age => age !== undefined);;
 
-assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
+// assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
 
-assertArraysEqual(results2, [6, 7, 2, 5, 3]);
+// assertArraysEqual(results2, [6, 7, 2, 5, 3]);
 
-assertArraysEqual(seniors, [77, 65, 82, 91]);
+// assertArraysEqual(seniors, [77, 65, 82, 91]);
+
+module.exports = map;

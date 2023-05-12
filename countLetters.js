@@ -23,13 +23,14 @@ const countLetters = function(string) {
   console.log(result);
 };
 
-const result = countLetters('hello');
+// const result = countLetters('hello');
 
-let helloKeys = Object.keys(result);
+// let helloKeys = Object.keys(result);
 
-for (let key of helloKeys) {
-  assertEqual((result[key]), countLetters('hello')[key]);
-}
+// for (let key of helloKeys) {
+//   assertEqual((result[key]), countLetters('hello')[key]);
+// }
 
 
-countLetters('hello');
+
+module.exports = countLetters;

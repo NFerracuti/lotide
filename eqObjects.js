@@ -55,21 +55,23 @@ const eqObjects = function(object1, object2) {
 };
 
 
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject= { size: "medium", color: "red" };
-assertEqual(eqObjects(shirtObject , anotherShirtObject), true); // => true
+// const shirtObject = { color: "red", size: "medium" };
+// const anotherShirtObject= { size: "medium", color: "red" };
+// assertEqual(eqObjects(shirtObject , anotherShirtObject), true); // => true
 
-const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
-assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false); // => false
+// const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
+// assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false); // => false
 
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-assertEqual(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject), true); // => true
+// const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
+// const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
+// assertEqual(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject), true); // => true
 
-const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-assertEqual(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject), false); // => false
+// const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
+// assertEqual(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject), false); // => false
 
 
-const testObj1 = {a: '1', b: '2', c: []};
-const testObj2 = {a: '1', b: '2', c: '3'};
-assertEqual(eqObjects(testObj1, testObj2), false);
+// const testObj1 = {a: '1', b: '2', c: []};
+// const testObj2 = {a: '1', b: '2', c: '3'};
+// assertEqual(eqObjects(testObj1, testObj2), false);
+
+module.exports = eqObjects;
