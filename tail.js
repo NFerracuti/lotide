@@ -8,5 +8,4 @@ const tail = function(x) {
   return output;
 };
 
-
 module.exports = tail;

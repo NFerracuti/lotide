@@ -1,30 +1,6 @@
-const eqArrays = function(actual, expected) {
+const assertArraysEqual = require('./assertArraysEqual');
 
-  if (actual.length !== expected.length) {
-
-    return false;
-  }
-    for (let i = 0; i < actual.length; i++) {
-
-      if (expected[i] !== actual[i]) {
-
-        return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(actual, expected) {
-
-  if (eqArrays(actual, expected)) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-
-const words = ["ground", "control", "to", "major", "tom"];
+const eqArrays = require('./eqArrays');
 
 const map = function(array, callback) {
 
@@ -36,6 +12,11 @@ const map = function(array, callback) {
   return results;
 };
 
+module.exports = map;
+
+// testing code not being used
+
+// const words = ["ground", "control", "to", "major", "tom"];
 // const results1 = map(words, word => word[0]);
 
 // const results2 = map(words, word => word.length);
@@ -50,4 +31,3 @@ const map = function(array, callback) {
 
 // assertArraysEqual(seniors, [77, 65, 82, 91]);
 
-module.exports = map;
