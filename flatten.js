@@ -5,6 +5,7 @@ const eqArrays = require('./eqArrays');
 const flatten = function(arr) {
 
   let output = [];
+  
   for (let i = 0; i < arr.length; i++) {
 
     if (Array.isArray(arr[i])) {
