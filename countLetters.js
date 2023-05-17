@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const countLetters = function(string) {
 
   let result = {};
@@ -13,17 +11,7 @@ const countLetters = function(string) {
       result[letters] = 1;
     }
   }
-  console.log(result);
+  return result;
 };
 
 module.exports = countLetters;
-
-//testing code not being used
-// const result = countLetters('hello');
-
-// let helloKeys = Object.keys(result);
-
-// for (let key of helloKeys) {
-//   assertEqual((result[key]), countLetters('hello')[key]);
-// }
-

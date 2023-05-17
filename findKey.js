@@ -14,7 +14,7 @@ const findKey = function(obj, callback) {
 
 module.exports = findKey;
 
-// testing code not being used
+// // testing code not being used
 // const result1 = (findKey({
 //   "Blue Hill": { stars: 1 },
 //   "Akaleri":   { stars: 3 },

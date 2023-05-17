@@ -1,7 +1,3 @@
-const assertEqual = require('./assertEqual');
-
-const eqArrays = require('./eqArrays');
-
 const eqObjects = require('./eqObjects');
 
 // Returns true if both objects have identical keys with identical values.
@@ -19,6 +15,6 @@ const assertObjectsEqual = function(actual, expected) {
 
 module.exports = assertObjectsEqual;
 
-// tester code not being used
+// // tester code not being used
 // console.log(assertObjectsEqual({1: 'a', 2: 'b', 3: 'c'}, {1: 'a', 2: 'b', 3: 'c'}));
 // console.log(assertObjectsEqual({1: 'a', 2: 'b', 3: 'c'}, {1: 'a', 2: 'b', 3: 'd'}));
